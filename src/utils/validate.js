@@ -6,8 +6,8 @@ export const checkValidData = (email, password, fullname) => {
       fullname === null || fullname === undefined ? true : /^[A-Z][a-z]+(\s[A-Z][a-z]?){0,}/.test(fullname.trim());
   
     if (!isEmailValid) return "Email ID is not valid";
-    if (!isPasswordValid) return "Password is not valid";
-    if (!isFullNameValid) return "Full Name is not valid";
+    if (!isPasswordValid) return "Password must be at least 8 characters and include uppercase, lowercase, and a number.";
+    if (!isFullNameValid) return "Full Name is not valid (e.g. Aiko Tanaka).";
   
     return null;
   };
