@@ -21,10 +21,10 @@ const Browse = () => {
         <div className= "overflow-x-hidden h-screen w-screen">
             <Header />
             { showGptSearch ? <GPTSearch />:
-            <>
+            <div className= 'flex flex-col'>
                  <MainContainer />
                  <SecondaryContainer />
-            </>
+            </div>
             } 
         </div>
         
