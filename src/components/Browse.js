@@ -18,7 +18,7 @@ const Browse = () => {
     useUpcomingMovies();
 
     return (
-        <div className= "overflow-x-hidden h-screen w-screen">
+        <div className= "overflow-x-hidden">
             <Header />
             { showGptSearch ? <GPTSearch />:
             <div className= 'flex flex-col'>

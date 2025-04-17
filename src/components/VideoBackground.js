@@ -10,10 +10,11 @@ const VideoBackground = ({movieId}) => {
        <div className="overflow-hidden">
         <iframe 
         className="w-screen aspect-video scale-[1.4]"
+        allow="autoplay"
         src={
             "https://www.youtube.com/embed/" +
             trailerVideo?.key +
-            "?autoplay=1&mute=1&rel=0&modestbranding=1&controls=0"
+            "?autoplay=1&loop=1&mute=1&rel=0&modestbranding=1&controls=0"
           }
         ></iframe>
        </div>
@@ -21,3 +22,4 @@ const VideoBackground = ({movieId}) => {
 };
 
 export default VideoBackground;
+
